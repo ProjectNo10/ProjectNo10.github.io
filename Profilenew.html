@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
     <style>
-        .header { 
-		background-image: url(https://i.pinimg.com/564x/7c/2b/f7/7c2bf7bdc3e6d336af1d1749ec977fd0.jpg);
-            background-size: cover;
-		}
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -16,9 +12,9 @@
             padding: 0;
         }
         .container {
-            max-width:fit-content;
-            margin:auto;
-            background-color:none;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 30px;
@@ -66,7 +62,7 @@
         }
     </style>
 </head>
-<body class="header">
+<body background="https://i.pinimg.com/564x/7c/2b/f7/7c2bf7bdc3e6d336af1d1749ec977fd0.jpg">
     <div class="container">
         <h1>User Profile</h1>
         <div class="profile-picture">
@@ -76,28 +72,28 @@
         </div>
         <div class="profile-info">
             <label for="username">Username:</label>
-            <p id="username">DuyAnh</p>
+            <p id="username">.......................</p>
             <label for="fullname">Full Name:</label>
-            <p id="fullname">Vũ Nguyễn Duy Anh</p>
+            <p id="fullname">......................</p>
             <label for="email">Email:</label>
-            <p id="email">23070417@vnu.edu.vn</p>
+            <p id="email">.....................</p>
             <label for="phone">Phone:</label>
-            <p id="phone">037xxxxxxx</p>
+            <p id="phone">..................</p>
             <label for="bio">Bio:</label>
-            <p id="bio">...</p>
+            <p id="bio">.................</p>
         </div>
         <button class="edit-profile-button" onclick="toggleEditForm()">Edit Profile</button>
         <form class="edit-form" id="editForm" style="display: none;">
             <label for="editUsername">Username:</label>
-            <input type="text" id="editUsername" value="DuyAnh">
+            <input type="text" id="editUsername" value="">
             <label for="editFullname">Full Name:</label>
-            <input type="text" id="editFullname" value="Vũ Nguyễn Duy Anh">
+            <input type="text" id="editFullname" value="">
             <label for="editEmail">Email:</label>
-            <input type="text" id="editEmail" value="230070417@vnu.edu.vn">
+            <input type="text" id="editEmail" value="">
             <label for="editPhone">Phone:</label>
-            <input type="text" id="editPhone" value="037xxxxxxx">
+            <input type="text" id="editPhone" value="">
             <label for="editBio">Bio:</label>
-            <textarea id="editBio">...</textarea>
+            <textarea id="editBio"></textarea>
             <button type="button" onclick="saveProfile()">Save</button>
             <button type="button" onclick="cancelEdit()">Cancel</button>
         </form>
